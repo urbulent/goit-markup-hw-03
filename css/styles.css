@@ -1,136 +1,156 @@
 :root {
---brand-color: #434455;
---secondary-text-color: #E7E9FC;
---light-text-color: #F4F4FD;
+  --brand-color: #434455;
+  --secondary-text-color: #e7e9fc;
+  --light-text-color: #f4f4fd;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    color: #434455;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: #434455;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
 }
-ul>li {
-    list-style-type: none;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul > li {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .hero {
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    color: #fff;
-    background-color: #2E2F42;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #fff;
+  background-color: #2e2f42;
 }
 
-.about-work{
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+.about-work {
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
-.about-us{
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
+.about-us {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 /* стилі заголовків */
 .text-card {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #434455;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .text-card-item {
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #434455;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 /*підкреслення з посилань відсутні*/
 a {
-    text-decoration: none;
-    color: #2E2F42;
+  text-decoration: none;
+  color: #2e2f42;
 }
 
 /* Логотип */
 .logos {
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .logos-color {
-    color: #4D5AE5;
+  color: #4d5ae5;
 }
-
 
 /* Список преймуществ */
 
-.goals-text{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+.goals-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
-.goals-description{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #434455;
+.goals-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
-.our-team{
-    font-style: normal; 
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+.our-team {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
-.job-title{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #434455;
+.job-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 /* кнопки фільтра */
 .list-button-order {
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #ffffff;
-    background: #4D5AE5;
-    border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  background: #4d5ae5;
+  border-radius: 4px;
 }
 
 .list-button {
-    cursor: pointer;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #4D5AE5;
-    background: #F4F4FD;
-    border: 1px solid #E7E9FC;
-    border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4d5ae5;
+  background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 
 .list-button-order:hover,
@@ -138,102 +158,105 @@ a {
 .list-button:hover,
 .list-button:focus,
 .list-button:active {
-    background: #404BBF;
-    color: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  background: #404bbf;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .link-item:hover,
 .link-item:focus {
-    color: #4D5AE5;
-    font-weight: 500;
+  color: #4d5ae5;
+  font-weight: 500;
 }
 
 .mailto,
 .telto {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #434455;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
-.mailto:hover, .mailto:focus {
-    color:#404BBF
+.mailto:hover,
+.mailto:focus {
+  color: #404bbf;
 }
 
-.telto:hover, .telto:focus{
-    color:#404BBF
+.telto:hover,
+.telto:focus {
+  color: #404bbf;
 }
 
 /* прибираємо маркери списку */
 .list-style-type {
-    list-style-type: none;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-    text-decoration: none;
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-decoration: none;
 }
 
 .list-style-type:hover {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .list-style-type:active {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #4D5AE5;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #4d5ae5;
 }
 
 .text-card {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .text-card-item {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 /* підвал сайту */
 .footer-style {
-    background-color: #2E2F42;
-    Width: 1440px;
-    Height: 110px;
+  background-color: #2e2f42;
+  width: 1440px;
+  height: 310px;
 }
 
 .footer-style-text {
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding-top: 100px;
 }
 
 .logos-footer {
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
 }
 
 .logos-color-footer {
-    color: #4D5AE5;
+  color: #4d5ae5;
 }
 
 .logos:hover,
 .logos-footer:hover {
-    color: #4D5AE5;
+  color: #4d5ae5;
 }
