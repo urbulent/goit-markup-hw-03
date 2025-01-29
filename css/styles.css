@@ -2,19 +2,48 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #ffffff;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
   background-color: #fff;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.header-nav {
+  display: flex;
 }
 
 .nav {
@@ -29,6 +58,7 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .header-span {
@@ -39,6 +69,34 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+}
+
+.header-links {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  margin-left: auto;
+}
+
+.flex-address {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.info-list {
+  display: flex;
+  margin-left: auto;
+  gap: 40px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.space {
+  /* margin-right: 40px; */
 }
 
 .nav-link {
@@ -72,6 +130,15 @@ ol {
 
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+.hero-wrapper {
+}
+
+.hero-title {
+  max-width: 496px;
+  margin: 0 auto;
 }
 
 .hero-text {
@@ -81,11 +148,18 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 48px;
 }
 
 .btn {
   background-color: #4d5ae5;
   font: inherit;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
+  min-width: 169px;
 }
 
 .btn:hover,
@@ -116,12 +190,27 @@ ol {
   overflow: hidden;
 }
 
+.benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 24px;
+}
+
+.benefits-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
 .bnf-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .bnf-text {
@@ -133,10 +222,15 @@ ol {
 
 .team-bc {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .item-bc {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-title {
@@ -147,6 +241,12 @@ ol {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-name {
@@ -154,19 +254,30 @@ ol {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: justify;
+  text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-pos {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: justify;
+  text-align: center;
   color: #434455;
 }
 
-.section-port {
+.first-card,
+.second-card,
+.third-card,
+.fourth-card {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.section-color {
   background-color: #fff;
 }
 
@@ -178,14 +289,31 @@ ol {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 42px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .portfolio-list {
+  width: calc((100% - 72px) / 3);
+}
+
+.portfolio-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+  display: flex;
+  /* position: absolute; */
 }
 
 .portfolio-item {
@@ -195,8 +323,28 @@ ol {
   color: #434455;
 }
 
+.first-portfolio,
+.second-portfolio,
+.third-portfolio,
+.fourth-portfolio,
+.fifth-portfolio,
+.sixth-portfolio {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 231px;
+}
+
+.shadow {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
+
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -224,4 +372,5 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-top: 16px;
 }
